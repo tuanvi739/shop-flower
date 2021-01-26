@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main-page.css">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet/less" type="text/css" href="css/blog.less">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+    <link rel="stylesheet" href="vendor/bootstrap-4/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="vendor/star-rating/css/star-rating.min.css"/>
+    <link rel="stylesheet" href="vendor/star-rating/themes/krajee-fa/theme.min.css"/>
+    <link rel="stylesheet" href="vendor/js/jquery-ui.min.css"/>
+    <script src="vendor/js/jquery-3.5.1.min.js"></script>
+    <script src="vendor/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js" async></script>
+    <link rel="shortcut icon" href="img/head.ico">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick-theme.css"/>
+    <title>Blog Masonry</title>
+</head>
+<body class="preloading">
+    <div class="spinner">
+      <div class="blob blob-0"></div>
+    </div>
+
+    <header>
+        <div class="logo-area">
+          <img src="img/logo.png" alt="logo">
+        </div>
+
+        <div class="menu-area">
+          <div class="position-left">
+            <form action="#">
+              <span class="fas fa-search"></span>
+              <input class="input-custom" type="text" placeholder="SEARCH">
+            </form>
+          </div>
+
+          <div class="position-center">
+            <ul class="nav-menu">
+                <li class="nav-item dropdown"><a class="nav-item-link" href="">Home</a>
+                  <ul class="dropdown-content">
+                    <li><a class="nav-item-link-dropdown" href="#">Main Home</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Grid Home</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Flower Shop</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Animated Slider</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-item-link" href="#">Pages</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="#">Shop</a></li>
+                <li class="nav-item dropdown"><a class="nav-item-link" href="#">Portfolio</a>
+                  <ul class="dropdown-content">
+                    <li><a class="nav-item-link-dropdown" href="#">Main Home</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Grid Home</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Flower Shop</a></li>
+                    <li><a class="nav-item-link-dropdown" href="#">Animated Slider</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item active"><a class="nav-item-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-item-link" href="#">Elements</a></li>
+            </ul>
+          </div>
+
+          <div class="position-right">
+            <div class="more-info">
+              <span class="fas fa-shopping-bag">
+                <div class="value-cart">
+                  <span class="info-cart">0</span>
+                </div>
+              </span>
+            </div>
+
+            <button class="btn-cart">
+              Cart($0)
+            </button>
+
+            <div class="cart-view">
+              <div class="top-cart">
+
+                <!-- cart item single -->
+
+                <!-- <div class="cart-item">
+                  <div class="cart-image">
+                    <img src="img/shop-1-img.jpg" alt="pd-1">
+                  </div>
+                  <div class="info-item">
+                    <span class="cart-item-name">Schefflera</span><br>
+                    <input class="quantity-input" type="number" value="1" min="1" max="5000" type="text"><span> X </span><span class="price-item">$259</span>
+                  </div>
+                  <div class="remove-btn">
+                    <button class="remove-item">
+                      +
+                    </button>
+                  </div>
+                </div> -->
+
+                <!-- end cart item single -->
+
+                <!-- <div class="cart-item">
+                  <div class="cart-image">
+                    <img src="img/shop-2-img.jpg" alt="pd-1">
+                  </div>
+                  <div class="info-item">
+                    <span class="cart-item-name">Orange Amaryllis</span><br>
+                    <input class="quantity-input" type="number" value="2" min="1" max="5000" type="text"><span> X </span><span class="price-item">$259</span>
+                  </div>
+                  <div class="remove-btn">
+                    <button class="remove-item">
+                      +
+                    </button>
+                  </div>
+                </div> -->
+
+                <!-- <div class="cart-item">
+                  <div class="cart-image">
+                    <img src="img/shop-3-img.jpg" alt="pd-1">
+                  </div>
+                  <div class="info-item">
+                    <span class="cart-item-name">Pink Flower Tree</span><br>
+                    <input class="quantity-input" type="number" value="3" min="1" max="5000" type="text"><span> X </span><span class="price-item">$259</span>
+                  </div>
+                  <div class="remove-btn">
+                    <button class="remove-item">
+                      +
+                    </button>
+                  </div>
+                </div> -->
+              </div>
+
+              <div class="bottom-cart">
+                <div class="total-cart">
+                  <h3>Total :</h3>
+                  <span class="total-price">$0</span>
+                </div>
+
+                <div class="btn-check">
+                  <button class="view-cart">View Cart</button>
+                  <button class="checkout">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+    <div class="main-title">
+        <div class="container-blog">
+            <h2 class="top-title">Blog Masonry</h2>
+            <p class="bottom-title">Where flowers are our inspiration</p>
+        </div>
+    </div>
+    <div class="container-blog">
+        <div class="blog-content">
+            <div class="blog-content-item">
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-8.jpg" alt="">
+                        <a class="blog-link" href="blog-detail.html"></a>
+                        <span class="blog-date">04.05.2020</span>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Say you care</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-7.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">The art of fresher flowers</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post-text">
+                    <div class="text-format">
+                        <h2>Creative solutions for all your<br> floral needs.</h2>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-6.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Say it with flowers</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-content-item">
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-9.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">With Impact</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post-text">
+                    <div class="text-format">
+                        <h2>You bring the thought. We’ll<br> bring the flowers.</h2>
+                    <span class="writer-name">JASMINE WHITE</span>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-2.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Made With Care</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-11.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Award winning florist</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-content-item">
+
+                <div class="post-text">
+                    <div class="text-format">
+                        <h2>Making beautiful flowers a part<br> of your life.</h2>
+                    <span class="writer-name">JASMINE WHITE</span>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-10.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Flowers, anytime…</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="img/blog-feature-img-9.jpg" alt="">
+                        <span class="blog-date">04.05.2020</span>
+                        <a class="blog-link" href="blog-detail.html"></a>
+                    </div>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Where dreams become reality</h2>
+                        <p class="blog-para">Class aptent taciti sociosqu ad
+                            litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-control">
+            <button class="page-number">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <button class="page-number">></button>
+        </div>
+    </div>
+    <footer>
+        <div class="myContainer">
+            <div class="footer-about">
+                <ul>
+                    <h4>customer service</h4>
+                    <li><a href="#">Help & Contact Us</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Online Stores</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+
+                <ul>
+                    <h4>company</h4>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">FAQ Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+                <ul>
+                    <h4>social media</a></h4>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+
+                <ul>
+                    <h4>archive</h4>
+                    <li><a href="#">Design Shoes</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Feature index</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+            </div><hr>
+        </div>
+        <div class="myContainer-ft">
+          <div class="footer-info">
+            <div class="footer-left">
+              <p>Copy right  <a href="#"><i class="fas fa-heart"></i></a></p>
+            </div>
+            <img src="img/footer-bottom-1.png" height="100%" alt="ft-about">
+            <div class="social-footer">
+                <a class="left" href="#">instagram</a>
+                <a href="#">facebook</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        $(window).on('load', function(event) {
+        $('body').removeClass('preloading');
+        $('.spinner').delay(1000).fadeOut('fast');
+        });
+    </script>
+</body>
+</html>

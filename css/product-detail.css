@@ -1,0 +1,228 @@
+.myContainer-fluid {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-bottom: 2.5rem;
+}
+.myContainer-fluid .myContainer .title {
+  padding: 4em 0 3rem 0;
+}
+.myContainer-fluid .myContainer .title .main-title {
+  font-family: "Playfair Display";
+  font-weight: 300;
+  font-size: 3rem;
+}
+.myContainer-fluid .myContainer .title .about-title {
+  font-family: "lora", serif;
+  font-weight: 200;
+  color: grey;
+}
+.myContainer {
+  margin-bottom: 3rem;
+}
+.myContainer .detail-content {
+  display: flex;
+}
+.myContainer .detail-content .gallery-product {
+  display: flex;
+  margin-right: 4.5rem;
+}
+.myContainer .detail-content .gallery-product .mini-image {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 1.3rem;
+}
+.myContainer .detail-content .gallery-product .mini-image img {
+  width: 118px;
+  height: 146px;
+  overflow: hidden;
+}
+.myContainer .detail-content .gallery-product .main-image {
+  width: 498px;
+  height: 643px;
+  overflow: hidden;
+  position: relative;
+}
+.myContainer .detail-content .gallery-product .main-image .sold-label {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.8rem;
+}
+.myContainer .detail-content .summary-product .top-summary {
+  margin-bottom: 2rem;
+}
+.myContainer .detail-content .summary-product .top-summary .name-product-detail {
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.myContainer .detail-content .summary-product .top-summary .price-product-detail {
+  color: grey;
+  font-size: 0.9rem;
+}
+.myContainer .detail-content .summary-product .center-summary {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  color: #949494;
+  margin-bottom: 2rem;
+}
+.myContainer .detail-content .summary-product .bottom-summary {
+  font-size: 0.8rem;
+}
+.myContainer .detail-content .summary-product .bottom-summary .info-stock {
+  font-family: "Lora";
+  font-size: 1rem;
+  font-weight: 600;
+}
+.myContainer .detail-content .summary-product .bottom-summary p {
+  color: black;
+  font-weight: 500;
+}
+.myContainer .detail-content .summary-product .bottom-summary span {
+  color: grey;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity {
+  margin-bottom: 1.5rem;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity .num-quantity {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity .input-quantity {
+  text-align: center;
+  border: none;
+  font-weight: 500;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity :focus {
+  outline: none;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity .add-to-cart {
+  padding: 15px 25px;
+  background-color: #000;
+  border: none;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.myContainer .detail-content .summary-product .bottom-summary .form-quantity .add-to-cart:hover {
+  background-color: #292929;
+}
+.myContainer .tab-panel {
+  margin-top: 2rem;
+}
+.myContainer .tab-panel .tabs {
+  list-style-type: none;
+  display: flex;
+}
+.myContainer .tab-panel .tabs .active {
+  background-color: #f34f3f;
+  color: white;
+}
+.myContainer .tab-panel .tabs button {
+  color: #000;
+  padding: 15px 47px;
+  border: #ebebeb solid 0.3px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.myContainer .tab-panel .tabs :focus {
+  outline: none;
+}
+.myContainer .tab-panel .tabcontent {
+  padding: 3rem 0;
+}
+.myContainer .tab-panel .tabcontent .title {
+  margin-bottom: 2rem;
+}
+.myContainer .tab-panel .tabcontent .des-h2 {
+  font-family: "Lora";
+  font-size: 2rem;
+}
+.myContainer .tab-panel .tabcontent .des-p {
+  margin-bottom: 5rem;
+  font-family: "Lora";
+  color: #949494;
+}
+.myContainer .tab-panel .tabcontent .add-p {
+  color: #000;
+}
+.myContainer .tab-panel .tabcontent span {
+  color: grey;
+}
+.myContainer .tab-panel .tabcontent .comment-user {
+  display: flex;
+}
+.myContainer .tab-panel .tabcontent .comment-user .image-user img {
+  width: 70px;
+  height: 70px;
+  margin-right: 25px;
+}
+.myContainer .tab-panel .tabcontent .comment-user .info-comment {
+  margin-bottom: 2rem;
+}
+.myContainer .tab-panel .tabcontent .comment-user .info-comment .title-comment {
+  display: flex;
+}
+.myContainer .tab-panel .tabcontent .comment-user .info-comment .title-comment .name-user {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.myContainer .tab-panel .tabcontent .comment-user .info-comment .title-comment .date-comment {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #949494;
+  letter-spacing: 1.5px;
+}
+.myContainer .tab-panel .tabcontent .comment-user .info-comment .content-comment {
+  font-family: "Lora";
+}
+.myContainer .tab-panel .tabcontent input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.myContainer .tab-panel .tabcontent :focus {
+  outline: none;
+}
+.myContainer .tab-panel .tabcontent .review {
+  height: 9rem;
+}
+.myContainer .tab-panel .tabcontent .name,
+.myContainer .tab-panel .tabcontent .mail {
+  height: 5rem;
+}
+.myContainer .tab-panel .tabcontent .checkbox {
+  padding: 0 !important;
+  margin: 0;
+  width: 1% !important;
+}
+.myContainer .tab-panel .tabcontent .submit-detail {
+  color: #fff;
+  background-color: #f34f3f;
+  padding: 15px 47px;
+  border: #ebebeb solid 0.3px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 3rem 0;
+}
+.myContainer .products {
+  margin: 3rem;
+}
+.myContainer .products .related {
+  font-size: 0.8rem;
+}

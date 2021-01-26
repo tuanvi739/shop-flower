@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* Loader */
+
+@keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1003;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+  }
+  .spinner div:first-child {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px 0 rgba(255, 56, 106, 1);
+    transform: translate3d(0, 0, 0);
+    animation: spin 2s linear infinite;
+  }
+  .spinner div:first-child:after,
+  .spinner div:first-child:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  .spinner div:first-child:before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    box-shadow: 0 3px 3px 0 rgb(255, 228, 32);
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+  }
+  .spinner div:first-child:after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    box-shadow: 0 3px 3px 0 rgba(61, 175, 255, 1);
+    animation: spin 1.5s linear infinite;
+  }
+
+/* end loader */
+
+.myContainer{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+/* end Navigation */
+
+
+/* banner link */
+.banner-link{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.banner-left,
+.banner-right{
+    width: 635px;
+    height: 210px;
+    position: relative;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.banner-left img{
+    transition:  transform 0.5s ease;
+}
+
+.banner-left .banner-left-info .banner-left-title{
+    font-size: 3.5rem;
+    font-family: "Lora";
+    color: #F34F3F;
+}
+
+.banner-left .banner-left-info p{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.banner-left .banner-left-info{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.banner-left:hover img{
+    transform: scale(1.05);
+}
+
+.banner-right{
+    line-height: 2.5rem;
+}
+
+.banner-right img{
+    transition:  transform 0.5s ease;
+}
+
+.banner-right-title .banner-right-item img {
+    width: 18px;
+    height: 18px;
+    margin: 0.7rem 1rem;
+}
+
+.banner-right .banner-right-title{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: block;
+}
+
+.banner-right .banner-right-title .banner-right-item{
+    list-style-type: none;
+    display: flex;
+}
+
+.banner-right:hover .img-right{
+    transform: scale(1.05);
+}
+
+/* end banner link */
+
+
+/* product */
+.sm-title,
+.sm-title-sale{
+    font-family: "Lora";
+    padding: 0.6rem 0 ;
+}
+
+.product-name,
+.product-price{
+    text-align: center;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.product-info{
+    padding-top: 1rem;
+    position: relative;
+}
+
+.product{
+    margin: 0.8rem;
+}
+
+.product-content{
+    padding: 0 0.5rem 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.product-price{
+    color: grey;
+    opacity: 1;
+    transition: ease 0.5s;
+    margin-bottom: 0;
+}
+
+.product-content:hover .product-price{
+    opacity: 0;
+}
+
+.product-image{
+    width: 295px;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.product-link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.product-btn{
+    position: absolute;
+    top: 48%;
+    left: 27%;
+    opacity: 0;
+    transition: ease 0.5s;
+    padding:1rem 1.8rem;
+    border: none;
+    color: grey;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.product-content:hover .product-btn{
+    text-decoration: none;
+    color:grey;
+    opacity: 1;
+}
+.product-content .product-btn:hover{
+    color: #F34F3F;
+    text-decoration: none;
+}
+
+.product-image img{
+    transition: transform 0.6s ease;
+}
+
+.product:hover .product-image img{
+    transform: scale(1.05);
+}
+.product-image .more-info .sm-title{
+    position: absolute;
+    background-color: #F34F3F;
+    padding: 0.5rem 0.8rem;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.product-image .more-info .sm-title-sale
+{
+    position: absolute;
+    background-color: #000;
+    padding: 0.5rem 0.8rem;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+
+}
+/* end product */
+
+.sub-content{
+    text-align: center;
+    margin-top: 45px;
+    height: 300px;
+}
+.sub-content h2{
+    font-family: "Lora-variable";
+    padding: 1.8rem;
+}
+
+.sub-content input{
+    width: 500px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 12.6px;
+}
+.sub-content input:focus{
+    outline: none;
+}
+.sub-content button{
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    height: 57px;
+    border: none;
+}
+
+/* responsive product */
+/* @media screen and (min-width:320px){
+    .banner-link{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-left,
+    .banner-right{
+        width: 253px;
+        height: 83px;
+    }
+    .banner-left .banner-left-info .banner-left-title{
+        font-size: 1.5rem;
+    }
+    .banner-left .banner-left-info p{
+        font-size: 0.5rem;
+    }
+
+    .banner-right .banner-right-title{
+        top:15%;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+    .banner-right .banner-right-title .banner-right-item img {
+        width: 40%;
+        margin: 0.2rem 0.4rem;
+        height: auto;
+    }
+} */
+
+
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-link{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 1rem;
+    }
+
+    .banner-link{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-left,
+    .banner-right{
+        width: 512px;
+        height: 169px;
+    }
+
+    .banner-left .banner-left-info .banner-left-title{
+        font-size: 3rem;
+    }
+    .banner-left .banner-left-info p{
+        font-size: 0.7rem;
+    }
+
+    .banner-right .banner-right-title{
+        top:15%;
+    }
+
+}
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+    }
+
+    .banner-left,
+    .banner-right{
+        width: 635px;
+        height: 210px;
+    }
+
+    .banner-left .banner-left-info .banner-left-title{
+        font-size: 4rem;
+    }
+    .banner-left .banner-left-info p{
+        font-size: 0.8rem;
+    }
+
+    .banner-right .banner-right-title{
+        top:20%;
+    }
+
+}
+}
